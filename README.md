@@ -1,44 +1,38 @@
-# MERN Expense Tracker
+# 💰 MERN Expense Tracker
 
-A full-stack expense tracking application built with:
+A full-stack expense tracking application built using the MERN stack.
 
-- MongoDB
-- Express.js
-- React.js
-- Node.js
-- JWT Authentication
-- bcrypt
-- MongoDB Aggregation
+The application allows users to securely register and log in, manage their personal expenses, and view spending analytics by category.
 
-## Features
+## 🚀 Features
 
 ### Authentication
-
 - User registration
 - User login
-- Password hashing with bcrypt
-- JWT authentication
-- Protected expense APIs
+- Password hashing using bcrypt
+- JWT-based authentication
+- Protected API routes
+- User-specific expense access
 
 ### Expense Management
-
-- Create expense
-- View own expenses
-- Edit expense
-- Delete expense
-- Category selection
+- Create expenses
+- View personal expenses
+- Edit expenses
+- Delete expenses
+- Expense categories
 - Expense date
+- Expense description
+- Expense amount
 
 ### Analytics
-
 - Total spending
 - Total transaction count
 - Average expense
-- Category-wise totals
+- Category-wise spending
 - MongoDB `$group` aggregation
-- Simple category bar chart
+- Category spending bar chart
 
-## Categories
+## 📂 Expense Categories
 
 - Food
 - Travel
@@ -48,11 +42,65 @@ A full-stack expense tracking application built with:
 
 ---
 
-# Project Setup
+# 🛠️ Technologies Used
 
-## 1. Clone repository
+## Frontend
+- React.js
+- React Router
+- Axios
+- CSS
 
-```bash
-git clone <your-repository-url>
+## Backend
+- Node.js
+- Express.js
+- JWT
+- bcryptjs
 
-cd expense-tracker
+## Database
+- MongoDB
+- Mongoose
+- MongoDB Aggregation
+
+## Development Tools
+- Git
+- GitHub
+- Code0
+
+---
+
+# 📁 Project Structure
+
+```text
+Expense-Tracker/
+│
+├── Backend/
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── expenseController.js
+│   ├── middleware/
+│   │   └── authMiddleware.js
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Expense.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── expenseRoutes.js
+│   ├── .env
+│   ├── package.json
+│   └── server.js
+│
+├── Frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── package.json
+│   └── index.html
+│
+├── .gitignore
+└── README.md
